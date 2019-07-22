@@ -136,4 +136,10 @@ gulp.task('copy-load', 'Copy LOADLIB to test environment', function (callback) {
   simpleCommand(command, callback);
 });
 
+gulp.task('pull', 'Pull MARBLE22', function (callback) {
+  var command = 'zowe endevor retrieve element MARBLE22 --type COBOL --tf MARBLE22.COBOL --sn 1';
+
+  simpleCommand(command, callback);
+});
+
 gulp.task('deploy', 'Deploy Program', gulpSequence('copy-dbrm','copy-load','bind-n-grant','cics-refresh'));

@@ -11,46 +11,12 @@ var config = require('../config.json');
  */
 
 /**
- * await Job Callback
- * @callback awaitJobCallback
- * @param {Error} err 
- */
-
-/**
  * Retrieve Marble Quantity Callback
  * @callback awaitQuantityCallback
  * @param {Error}  err 
  * @param {number} quantity null if marble is not defined in inventory
  * @param {number} cost     null if marble is not defined in inventory
  */
-
-/**
-* Polls jobId. Callback is made without error if Job completes with CC 0000 in the allotted time
-* @param {string}           jobId     jobId to check the completion of
-* @param {awaitJobCallback} callback  function to call after completion
-* @param {number}           tries     max attempts to check the completion of the job
-* @param {number}           wait      wait time in ms between each check
-*/
-function awaitJobCompletion(jobId, callback, tries = 30, wait = 1000) {
-  if (tries > 0) {
-      sleep(wait);
-      cmd.get(
-      'zowe jobs view job-status-by-jobid ' + jobId + ' --rff retcode --rft string',
-      function (err, data, stderr) {
-          retcode = data.trim();
-          if (retcode == "CC 0000") {
-            callback(null);
-          } else if (retcode == "null") {
-            awaitJobCompletion(jobId, callback, tries - 1, wait);
-          } else {
-            callback(new Error(jobId + " had a return code of " + retcode));
-          }
-      }
-      );
-  } else {
-      callback(new Error(jobId + " timed out."));
-  }
-}
 
 /**
 * Creates a Marble with an initial quantity
@@ -89,47 +55,27 @@ function deleteMarble(color, callback) {
 *
 */
 function getMarbleQuantity(color, callback) {
-  // Submit job, await completion
-  cmd.get(
-    'zowe jobs submit data-set "' + config.db2QueryJCL + '" --rff jobid --rft string',
-    function (err, data, stderr) {
-      if(err){
-        throw err
-      } else {
-        // Strip unwanted whitespace/newline
-        var jobId = data.trim();
-        
-        // Await the jobs completion
-        awaitJobCompletion(jobId, function(err){
-          if(err){
-            throw err
-          } else {
-            cmd.get(
-              'zowe jobs view sfbi ' + jobId + ' 104',
-              function (err, data, stderr) {
-                if(err){
-                  callback(err);
-                } else {
-                  var pattern = new RegExp(".*\\| " + color + " .*\\|.*\\|.*\\|","g");
-                  var found = data.match(pattern);
-                  if(!found){
-                    callback(err, null, null);
-                  } else { //found
-                    //found should look like nn_| COLOR       |       QUANTITY |        COST |
-                    var row = found[0].split("|"),
-                        quantity = Number(row[2]),
-                        cost = Number(row[3]);
+  var db2 = (typeof process.env.DB2 === "undefined") ? "" : process.env.DB2,
+      command = 'zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj ' + db2;
 
-                    callback(err, quantity, cost);
-                  }
-                }
-              }
-            );
-          }
-        });
+  cmd.get(command, function(err, data, stderr) { 
+    if(err){
+      callback(err);
+    } else if (stderr){
+      callback(new Error("\nCommand:\n" + command + "\n" + stderr + "Stack Trace:"));
+    } else {
+      data = JSON.parse(data);
+      var desiredEntry = data.data[0].find(function(obj) {
+        return obj.COLOR.trim() === color;
+      });
+
+      if(desiredEntry === undefined){ // not found
+        callback(err, null, null);
+      } else {
+        callback(err, desiredEntry.INVENTORY, desiredEntry.COST);
       }
     }
-  );
+  });
 }
 
 /**

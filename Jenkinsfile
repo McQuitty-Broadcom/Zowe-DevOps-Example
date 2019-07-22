@@ -19,6 +19,9 @@ pipeline {
         // CICS Connection Details
         CICS="--port 6000 --region-name CICSTRN1"
 
+        // Db2 Connection Details
+        DB2="--port 6017 --database D10CPTIB"
+
     }
     stages {
         stage('local setup') {

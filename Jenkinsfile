@@ -14,7 +14,7 @@ pipeline {
         ZOWE_OPT_REJECT_UNAUTHORIZED=false
 
         // File Master Plus Connection Details
-        FMP="--port 6001 --protocol http --reject-unauthorized false"
+        FMP="--port 6001 --protocol https --reject-unauthorized false"
 
         // CICS Connection Details
         CICS="--port 6000 --region-name CICSTRN1"

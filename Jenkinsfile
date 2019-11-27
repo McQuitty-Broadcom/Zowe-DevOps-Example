@@ -25,7 +25,6 @@ pipeline {
         }
         stage('build') {
             steps {
-                //ZOWE_OPT_USERNAME & ZOWE_OPT_PASSWORD are used to interact with Endevor 
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     sh 'gulp build'
                 }
@@ -33,7 +32,6 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                //ZOWE_OPT_USER & ZOWE_OPT_PASSWORD are used to interact with z/OSMF and CICS
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     sh 'gulp deploy'
                 }
@@ -41,7 +39,6 @@ pipeline {
         }
         stage('test') {
             steps {
-                //ZOWE_OPT_USER & ZOWE_OPT_PASS are used to interact with z/OSMF
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
                     sh 'npm test'
                 }
@@ -51,6 +48,7 @@ pipeline {
 
     post {
         always {
+            archiveArtifacts artifacts: '*-archive/**/*.*' 
             publishHTML([allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,

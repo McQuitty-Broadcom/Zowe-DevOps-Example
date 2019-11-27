@@ -1,5 +1,7 @@
 JCL/
+command-archive/
+endevor-report*.txt
+job-archive/
+MARBLE*.COBOL
 mochawesome-report/
 node_modules/
-endevor-report*.txt
-MARBLE*.COBOL

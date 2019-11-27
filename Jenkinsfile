@@ -19,7 +19,7 @@ pipeline {
                 sh 'zowe profiles create db2 Jenkins --port 6017 --database D10CPTIB --host dummy --user dummy --password dummy'
                 sh 'zowe profiles create endevor Jenkins --port 6002 --protocol http --ru false --host dummy --user dummy --password dummy'
                 sh 'zowe profiles create endevor-location Marbles --instance ENDEVOR --env DEV --sys MARBLES --sub MARBLES --ccid JENKXX --comment JENKXX'
-                sh 'zowe profiles create fmp Jenkins --port 6001 --protocol https --host dummy --user dummy --password dummy'
+                sh 'zowe profiles create fmp Jenkins --port 6001 --protocol https --ru false --host dummy --user dummy --password dummy'
                 sh 'zowe profiles create zosmf Jenkins --port 443 --ru false --host dummy --user dummy --password dummy'
             }
         }

@@ -3,7 +3,8 @@ var cmd = require('node-cmd'),
     fs = require('fs'),
     gulp = require('gulp-help')(require('gulp')),
     gulpSequence = require('gulp-sequence'),
-    PluginError = require('plugin-error');
+    PluginError = require('plugin-error'),
+    readlineSync = require('readline-sync');
 
 
 /**
@@ -12,6 +13,76 @@ var cmd = require('node-cmd'),
  * @callback awaitJobCallback
  * @param {Error} err 
  */
+
+/**
+  * commandObject - object contains command to submit and directory to download output to
+  * @object commandObject
+  * @param {string} command Command to submit
+  * @param {string} dir     Directory to download command output to 
+  */
+
+ /**
+* Creates zw (Zowe-Workshop) profiles for project and sets them as default
+* @param {string}           host     z/OS host the project is running against
+* @param {string}           user     username
+* @param {string}           pass     password
+* @param {awaitJobCallback} callback function to call after completion
+*/
+function createAndSetProfiles(host, user, pass, callback){
+  var commands = [
+    {
+      command: "zowe profiles create zosmf zw --host " + host + " --user " + user + " --pass " +
+               pass + " --port " + config.zosmfPort + " --ru " + config.zosmfRejectUnauthorized + " --ow",
+      dir: "command-archive/create-zosmf-profile"
+    },
+    {
+      command: "zowe profiles set zosmf zw",
+      dir: "command-archive/set-zosmf-profile"
+    },
+    {
+      command: "zowe profiles create endevor zw --host " + host + " --user " + user + " --pass " +
+               pass + " --port " + config.endevorPort + " --ru " + config.endevorRejectUnauthorized + 
+               " --protocol " + config.endevorProtocol + " --ow",
+      dir: "command-archive/create-endevor-profile"
+    },
+    {
+      command: "zowe profiles set endevor zw",
+      dir: "command-archive/set-endevor-profile"
+    },
+    {
+      command: "zowe profiles create endevor-location zw --instance " + config.endevorInstance +
+               " --environment " + config.endevorEnvironment + " --system " + config.endevorSystem +
+               " --subsystem " + config.endevorSubsystem + " --ccid " + user + 
+               " --maxrc 0 --stage-number 1 --comment " + user + " --ow",
+      dir: "command-archive/create-endevor-location-profile"
+    },
+    {
+      command: "zowe profiles set endevor-location zw",
+      dir: "command-archive/set-endevor-location-profile"
+    },
+    {
+      command: "zowe profiles create fmp zw --host " + host + " --user " + user + " --pass " +
+               pass + " --port " + config.fmpPort + " --ru " + config.fmpRejectUnauthorized + 
+               " --protocol " + config.fmpProtocol + " --ow",
+      dir: "command-archive/create-fmp-profile"
+    },
+    {
+      command: "zowe profiles set fmp zw",
+      dir: "command-archive/set-fmp-profile"
+    },
+    {
+      command: "zowe profiles create db2 zw --host " + host + " --user " + user + " --pass " +
+               pass + " --port " + config.db2Port + " --database " + config.db2Database + 
+               " --ow",
+      dir: "command-archive/create-db2-profile"
+    },
+    {
+      command: "zowe profiles set db2 zw",
+      dir: "command-archive/set-db2-profile"
+    }
+  ];
+  submitMultipleSimpleCommands(commands, callback);
+}
 
 /**
 * Runs command and calls back without error if successful
@@ -68,6 +139,26 @@ function submitJobAndDownloadOutput(ds, dir="job-archive", maxRC=0, callback){
       }
     }
   });
+}
+
+/**
+* Submits multiple simple commands
+* @param {commandObject[]}  commands Array of commandObjects
+* @param {awaitJobCallback} callback function to call after completion
+*/
+function submitMultipleSimpleCommands(commands, callback){
+  if(commands.length>0){
+    simpleCommand(commands[0].command, commands[0].dir, function(err){
+      if(err){
+        callback(err);
+      } else {
+        commands.shift();
+        submitMultipleSimpleCommands(commands, callback);
+      }
+    })
+  } else {
+    callback();
+  }
 }
 
 /**
@@ -144,3 +235,11 @@ gulp.task('copy-load', 'Copy LOADLIB to test environment', function (callback) {
 });
 
 gulp.task('deploy', 'Deploy Program', gulpSequence('copy-dbrm','copy-load','bind-n-grant','cics-refresh'));
+
+gulp.task('setupProfiles', 'Create project profiles and set them as default', function (callback) {
+  var host, user, pass;
+  host = readlineSync.question('Host name or IP address: ');
+  user = readlineSync.question('Username: ');
+  pass = readlineSync.question('Password: ', { hideEchoBack: true });
+  createAndSetProfiles(host, user, pass, callback);
+});

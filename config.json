@@ -1,6 +1,7 @@
 {
     "bindGrantJCL"              : "CUST001.MARBLES.JCL(MARBIND)",
     "cicsConsole"               : "CUST001",
+    "cicsPort"                  : 6000,
     "cicsProgram"               : "MARBLE01",
     "cicsRegion"                : "CICSTRN1",
     "cicsTran"                  : "MB01",

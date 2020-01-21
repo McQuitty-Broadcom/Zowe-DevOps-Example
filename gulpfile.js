@@ -71,6 +71,16 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-fmp-profile"
     },
     {
+      command: "zowe profiles create cics zw --host " + host + " --user " + user + " --password " +
+               pass + " --port " + config.cicsPort + " --region-name " + config.cicsRegion +
+               " --ow",
+      dir: "command-archive/create-cics-profile"
+    },
+    {
+      command: "zowe profiles set cics zw",
+      dir: "command-archive/set-cics-profile"
+    },
+    {
       command: "zowe profiles create db2 zw --host " + host + " --user " + user + " --pass " +
                pass + " --port " + config.db2Port + " --database " + config.db2Database + 
                " --ow",

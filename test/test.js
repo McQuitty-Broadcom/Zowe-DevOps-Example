@@ -16,19 +16,17 @@ var assert = require('assert'),
  * @callback awaitQuantityCallback
  * @param {Error}  err 
  * @param {number} quantity null if marble is not defined in inventory
- * @param {number} cost     null if marble is not defined in inventory
  */
 
 /**
 * Creates a Marble with an initial quantity
 * @param {string}           color        color of Marble to create
 * @param {number}           [quantity=1] quantity of Marbles to initially create
-* @param {number}           [cost=1]     cost of Marble to initially create
 * @param {nodeCmdCallback}  [callback]   function to call after completion, callback(err, data, stderr)
 */
-function createMarble(color, quantity=1, cost=1, callback) {
+function createMarble(color, quantity=1, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' CRE ' + color + " " + quantity + " " + cost + '" --cn ' + config.cicsConsole,
+    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' CRE ' + color + " " + quantity + '" --cn ' + config.cicsConsole,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -84,7 +82,7 @@ function getMarbleQuantity(color, callback) {
       if(desiredEntry === undefined){ // not found
         callback(err, null, null);
       } else {
-        callback(err, desiredEntry.INVENTORY, desiredEntry.COST);
+        callback(err, desiredEntry.INVENTORY);
       }
     }
   });
@@ -165,9 +163,9 @@ describe('Marbles', function () {
       })
     });
 
-    it.only('should create a single marble with cost of 1', function (done) {
+    it.only('should create a single marble', function (done) {
       // Create marble
-      createMarble(COLOR, 1, 1, function(err, data, stderr){
+      createMarble(COLOR, 1, function(err, data, stderr){
         if(err){
           throw err;
         } else if (stderr){
@@ -177,12 +175,11 @@ describe('Marbles', function () {
           data = data.trim();
           assert.equal(data, "+SUCCESS", "Unsuccessful marble creation");
 
-          getMarbleQuantity(COLOR, function(err, quantity, cost){
+          getMarbleQuantity(COLOR, function(err, quantity){
             if(err){
               throw err;
             }
             assert.equal(quantity, 1, "Inventory is not as expected");
-            assert.equal(cost, 1, "Cost is not as expected");
             done();
           });
         }
@@ -191,7 +188,7 @@ describe('Marbles', function () {
 
     it('should not create a marble of a color that already exists', function (done) {
       // Create marble
-      createMarble(COLOR, 2, 2, function(err, data, stderr){
+      createMarble(COLOR, 2, function(err, data, stderr){
         if(err){
           throw err
         } else if (stderr){

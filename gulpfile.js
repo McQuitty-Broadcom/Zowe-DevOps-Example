@@ -218,14 +218,6 @@ gulp.task('build-cobol', 'Build COBOL element', function (callback) {
   simpleCommand(command, "command-archive/build-cobol", callback);
 });
 
-gulp.task('build-lnk', 'Build LNK element', function (callback) {
-  var command = "zowe endevor generate element " + config.testElement + " --type LNK --override-signout --maxrc 0 --stage-number 1";
-
-  simpleCommand(command, "command-archive/build-lnk", callback);
-});
-
-gulp.task('build', 'Build Program', gulpSequence('build-cobol','build-lnk'));
-
 gulp.task('cics-refresh', 'Refresh(new-copy) ' + config.cicsProgram + ' CICS Program', function (callback) {
   var command = 'zowe cics refresh program "' + config.cicsProgram + '"';
 

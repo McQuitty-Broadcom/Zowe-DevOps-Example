@@ -165,7 +165,7 @@ describe('Marbles', function () {
       })
     });
 
-    it('should create a single marble with cost of 1', function (done) {
+    it.only('should create a single marble with cost of 1', function (done) {
       // Create marble
       createMarble(COLOR, 1, 1, function(err, data, stderr){
         if(err){

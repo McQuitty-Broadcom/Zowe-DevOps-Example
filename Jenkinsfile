@@ -26,37 +26,37 @@ pipeline {
         stage('build') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    sh 'gulp build'
+                    sh 'echo build'
                 }
             }
         }
         stage('deploy') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    sh 'gulp deploy'
+                    sh 'echo deploy'
                 }
             }
         }
         stage('test') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'eosCreds', usernameVariable: 'ZOWE_OPT_USER', passwordVariable: 'ZOWE_OPT_PASSWORD')]) {
-                    sh 'npm test'
+                    sh 'echo test'
                 }
             }
         }
     }
 
-    post {
-        always {
-            archiveArtifacts artifacts: '*-archive/**/*.*' 
-            publishHTML([allowMissing: false,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'mochawesome-report',
-                reportFiles: 'mochawesome.html',
-                reportName: 'Test Results',
-                reportTitles: 'Test Report'
-                ])
-        }
-    }
+    // post {
+    //     always {
+    //         archiveArtifacts artifacts: '*-archive/**/*.*' 
+    //         publishHTML([allowMissing: false,
+    //             alwaysLinkToLastBuild: true,
+    //             keepAll: true,
+    //             reportDir: 'mochawesome-report',
+    //             reportFiles: 'mochawesome.html',
+    //             reportName: 'Test Results',
+    //             reportTitles: 'Test Report'
+    //             ])
+    //     }
+    // }
 }

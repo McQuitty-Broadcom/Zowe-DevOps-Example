@@ -73,7 +73,7 @@ function createAndSetProfiles(host, user, pass, callback){
     {
       command: "zowe profiles create cics zw --host " + host + " --user " + user + " --password " +
                pass + " --port " + config.cicsPort + " --region-name " + config.cicsRegion +
-               " --ow",
+               " --protocol " + config.cicsProtocol + " --ow",
       dir: "command-archive/create-cics-profile"
     },
     {

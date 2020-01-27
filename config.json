@@ -3,6 +3,7 @@
     "cicsConsole"               : "CUST001",
     "cicsPort"                  : 6000,
     "cicsProgram"               : "MARBLE01",
+    "cicsProtocol"              : "http",
     "cicsRegion"                : "CICSTRN1",
     "cicsTran"                  : "MB01",
     "db2Database"               : "D10CPTIB",

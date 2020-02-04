@@ -158,9 +158,15 @@ describe('Marbles', function () {
 
     // Delete the marble to reset inventory to zero (Delete will be tested later)
     before(function(done){
-      deleteMarble(COLOR, function(){
-        done();
-      })
+      deleteMarble(COLOR, function(err, data, stderr){
+        if(err){
+          throw err;
+        } else if (stderr){
+          throw new Error("\nError: " + stderr);
+        } else {
+          done();
+        }
+      });
     });
 
     it.only('should create a single marble', function (done) {

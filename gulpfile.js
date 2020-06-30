@@ -61,16 +61,6 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-endevor-location-profile"
     },
     {
-      command: "zowe profiles create fmp zw --host " + host + " --user " + user + " --pass " +
-               pass + " --port " + config.fmpPort + " --ru " + config.fmpRejectUnauthorized + 
-               " --protocol " + config.fmpProtocol + " --ow",
-      dir: "command-archive/create-fmp-profile"
-    },
-    {
-      command: "zowe profiles set fmp zw",
-      dir: "command-archive/set-fmp-profile"
-    },
-    {
       command: "zowe profiles create cics zw --host " + host + " --user " + user + " --password " +
                pass + " --port " + config.cicsPort + " --region-name " + config.cicsRegion +
                " --protocol " + config.cicsProtocol + " --ru " + config.cicsRejectUnauthorized + " --ow",
@@ -224,19 +214,12 @@ gulp.task('cics-refresh', 'Refresh(new-copy) ' + config.cicsProgram + ' CICS Pro
   simpleCommand(command, "command-archive/cics-refresh", callback);
 });
 
-gulp.task('copy-dbrm', 'Copy DBRMLIB to test environment', function (callback) {
-  var command = 'zowe file-master-plus copy data-set "' + config.devDBRMLIB + '" "' + config.testDBRMLIB + '" -m ' + config.testElement;
-
-  simpleCommand(command, "command-archive/copy-dbrm", callback);
+gulp.task('copy', 'Copy LOADLIB & DBRMLIB to test environment', function (callback) {
+  var ds = config.copyJCL;
+  submitJobAndDownloadOutput(ds, "job-archive/copy", 4, callback);
 });
 
-gulp.task('copy-load', 'Copy LOADLIB to test environment', function (callback) {
-  var command = 'zowe file-master-plus copy data-set "' + config.devLOADLIB + '" "' + config.testLOADLIB + '" -m ' + config.testElement;
-
-  simpleCommand(command, "command-archive/copy-load", callback);
-});
-
-gulp.task('deploy', 'Deploy Program', gulpSequence('copy-dbrm','copy-load','bind-n-grant','cics-refresh'));
+gulp.task('deploy', 'Deploy Program', gulpSequence('copy','bind-n-grant','cics-refresh'));
 
 gulp.task('setupProfiles', 'Create project profiles and set them as default', function (callback) {
   var host, user, pass;

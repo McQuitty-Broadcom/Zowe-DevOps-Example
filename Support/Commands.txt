@@ -1,0 +1,27 @@
+npm install
+npm install -g gulp-cli
+gulp setupProfiles
+
+# Update Endevor Elements
+zowe endevor ret element MARBLE01 --type COBOL --os
+zowe endevor update element MARBLE01 --type COBOL --os
+
+# List Members
+zowe files list am "PRODUCT.NDVR.MARBLES.MARBLES.D1.LOADLIB"
+zowe files list am "PRODUCT.NDVR.MARBLES.MARBLES.D1.DBRMLIB"
+
+# Copy LoadLib and DBRM Lib
+zowe jobs submit ds "CUST001.MARBLES.JCL(MARBCOPY)"  --vasc
+
+# Bind and Grant
+zowe jobs.submit ds "CUST001.MARBLES.JCL(MARBIND)" --vasc
+
+# CICS Refresh
+zowe cics refresh program MARBLE01
+
+# Execute CICS program
+zowe console issue command "F CICSTRN1,MB01 CRE RED 1 1" --cn CUST001
+
+# Check DB
+zowe db2 execute sql -q "select * from EVENT.MARBLE"
+

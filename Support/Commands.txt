@@ -62,7 +62,7 @@ gulp deploy
 #
 # Manually verify
 #
-zowe console issue command "F CICSTRN1,MB01 CRE ##YOURCOLOR## 1 2" --cn CUST001
+zowe console issue command "F CICSTRN1,MB01 CRE RED 1 2" --cn CUST001
 zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE"
 
 # 

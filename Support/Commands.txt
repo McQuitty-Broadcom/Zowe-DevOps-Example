@@ -12,7 +12,7 @@ gulp setupProfiles
 #
 # Verify Setup
 #
-zowe zosmf profiles list zosmf
+zowe profiles list zosmf
 zowe zosmf check status
 zowe files list ds "CUST001.MARBLES.*"
 
@@ -40,6 +40,12 @@ zowe endevor ret element MARBLE01 --type COBOL --tf MARBLE01.cbl --os
 # Edit the code in Che, then update it
 #
 zowe endevor update element MARBLE01 --type COBOL --ff MARBLE01.cbl --os
+
+#
+# Generate the Elements manually
+#
+zowe endevor generate element MARBLE01 --type COBOL --os
+zowe endevor generate element MARBLE01 --type LNK --os
 
 #
 # Start Using Gulp.

@@ -31,8 +31,8 @@ var cmd = require('node-cmd'),
 function createAndSetProfiles(host, user, pass, callback){
   var commands = [
     {
-      command: "zowe profiles create zosmf zw --host " + host + " --user " + user + " --pass " +
-               pass + " --port " + config.zosmfPort + " --ru " + config.zosmfRejectUnauthorized + " --ow",
+      command: `zowe profiles create zosmf zw --host ${host} --user ${user} --pass ${pass}` +
+         ` --port ${config.zosmfPort} --ru ${config.zosmfRejectUnauthorized} --ow`,
       dir: "command-archive/create-zosmf-profile"
     },
     {
@@ -40,9 +40,9 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-zosmf-profile"
     },
     {
-      command: "zowe profiles create endevor zw --host " + host + " --user " + user + " --pass " +
-               pass + " --port " + config.endevorPort + " --ru " + config.endevorRejectUnauthorized + 
-               " --protocol " + config.endevorProtocol + " --ow",
+      command: `zowe profiles create endevor zw --host ${host} --user ${user}  --pass ${pass}` +
+               ` --port ${config.endevorPort} --ru ${config.endevorRejectUnauthorized}` + 
+               ` --protocol  ${config.endevorProtocol} --ow`,
       dir: "command-archive/create-endevor-profile"
     },
     {
@@ -50,10 +50,10 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-endevor-profile"
     },
     {
-      command: "zowe profiles create endevor-location zw --instance " + config.endevorInstance +
-               " --environment " + config.endevorEnvironment + " --system " + config.endevorSystem +
-               " --subsystem " + config.endevorSubsystem + " --ccid " + user + 
-               " --maxrc 0 --stage-number 1 --comment " + user + " --ow",
+      command: `zowe profiles create endevor-location zw --instance ${config.endevorInstance}` +
+               ` --environment ${config.endevorEnvironment} --system ${config.endevorSystem}` +
+               ` --subsystem ${config.endevorSubsystem} --ccid ${user}` + 
+               ` --maxrc 0 --stage-number 1 --comment ${user} --ow`,
       dir: "command-archive/create-endevor-location-profile"
     },
     {
@@ -61,9 +61,9 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-endevor-location-profile"
     },
     {
-      command: "zowe profiles create cics zw --host " + host + " --user " + user + " --password " +
-               pass + " --port " + config.cicsPort + " --region-name " + config.cicsRegion +
-               " --protocol " + config.cicsProtocol + " --ru " + config.cicsRejectUnauthorized + " --ow",
+      command: `zowe profiles create cics zw --host  ${host} --user ${user} --password ${password}` +
+               ` --port ${config.cicsPort} --region-name ${config.cicsRegion}` +
+               ` --protocol ${config.cicsProtocol} --ru ${config.cicsRejectUnauthorized} --ow`,
       dir: "command-archive/create-cics-profile"
     },
     {
@@ -71,9 +71,8 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-cics-profile"
     },
     {
-      command: "zowe profiles create db2 zw --host " + host + " --user " + user + " --pass " +
-               pass + " --port " + config.db2Port + " --database " + config.db2Database + 
-               " --ow",
+      command: `zowe profiles create db2 zw --host ${host} --user ${user} --pass ${pass}` +
+               ` --port ${config.db2Port} --database ${config.db2Database} --ow`,
       dir: "command-archive/create-db2-profile"
     },
     {
@@ -117,7 +116,7 @@ function simpleCommand(command, dir, callback, expectedOutputs){
 * @param {awaitJobCallback} callback            function to call after completion
 */
 function submitJobAndDownloadOutput(ds, dir="job-archive", maxRC=0, callback){
-  var command = 'zowe jobs submit data-set "' + ds + '" -d ' + dir + " --rfj";
+  var command = `zowe jobs submit data-set "${ds}" -d ${dir} --rfj`;
   cmd.get(command, function(err, data, stderr) { 
     //log output
     var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -183,8 +182,10 @@ function verifyOutput(data, expectedOutputs, callback){
 * @param {string}           content content to write
 */
 function writeToFile(dir, content) {
-  var d = new Date(),
-      filePath = dir + "/" + d.toISOString() + ".txt";
+  // Adjusted to account for Windows filename issues with : in the name.
+  var d = new Date(), 
+    fileName = d.toISOString().split(":").join("-") + ".txt",
+    filePath = dir + "/" + fileName;
 
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
@@ -203,21 +204,21 @@ gulp.task('bind-n-grant', 'Bind & Grant Job', function (callback) {
 });
 
 gulp.task('build-cobol', 'Build COBOL element', function (callback) {
-  var command = "zowe endevor generate element " + config.testElement + " --type COBOL --override-signout --maxrc 0 --stage-number 1";
+  var command = `zowe endevor generate element ${config.testElement} --type COBOL --override-signout --maxrc 0 --stage-number 1`;
 
   simpleCommand(command, "command-archive/build-cobol", callback);
 });
 
 gulp.task('build-lnk', 'Build LNK element', function (callback) {
-      command = "zowe endevor generate element " + config.testElement + " --type LNK --override-signout --maxrc 0 --stage-number 1 ";
+      command = `zowe endevor generate element ${config.testElement} --type LNK --override-signout --maxrc 0 --stage-number 1`;
 
   simpleCommand(command, "command-archive/build-link", callback);
 });
 
 gulp.task('build', 'Build Program', gulpSequence('build-cobol','build-lnk'));
 
-gulp.task('cics-refresh', 'Refresh(new-copy) ' + config.cicsProgram + ' CICS Program', function (callback) {
-  var command = 'zowe cics refresh program "' + config.cicsProgram + '"';
+gulp.task('cics-refresh', `Refresh(new-copy) ${config.cicsProgram} CICS Program`, function (callback) {
+  var command = `zowe cics refresh program "${config.cicsProgram}"`;
 
   simpleCommand(command, "command-archive/cics-refresh", callback);
 });

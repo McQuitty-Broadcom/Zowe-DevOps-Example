@@ -61,7 +61,7 @@ function createAndSetProfiles(host, user, pass, callback){
       dir: "command-archive/set-endevor-location-profile"
     },
     {
-      command: `zowe profiles create cics zw --host  ${host} --user ${user} --password ${pass}` +
+      command: `zowe profiles create cics zw --host  ${host} --user ${user} --pass ${pass}` +
                ` --port ${config.cicsPort} --region-name ${config.cicsRegion}` +
                ` --protocol ${config.cicsProtocol} --ru ${config.cicsRejectUnauthorized} --ow`,
       dir: "command-archive/create-cics-profile"

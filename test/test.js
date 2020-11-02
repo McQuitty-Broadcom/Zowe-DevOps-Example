@@ -26,7 +26,7 @@ var assert = require('assert'),
 */
 function createMarble(color, quantity=1, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' CRE ' + color + " " + quantity + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} CRE ${color} ${quantity}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -44,7 +44,7 @@ function createMarble(color, quantity=1, callback) {
 */
 function deleteMarble(color, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' DEL ' + color + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} DEL ${color}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -62,7 +62,7 @@ function deleteMarble(color, callback) {
 *
 */
 function getMarbleQuantity(color, callback) {
-  var command = 'zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj';
+  var command = `zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj`;
 
   cmd.get(command, function(err, data, stderr) {
     //log output
@@ -96,7 +96,7 @@ function getMarbleQuantity(color, callback) {
 */
 function updateMarble(color, quantity, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' UPD ' + color + " " + quantity + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} UPD ${color} ${quantity}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -113,8 +113,10 @@ function updateMarble(color, quantity, callback) {
 * @param {string}           content content to write
 */
 function writeToFile(dir, content) {
-  var d = new Date(),
-      filePath = dir + "/" + d.toISOString() + ".txt";
+  // Adjusted to account for Windows filename issues with : in the name.
+  var d = new Date(), 
+    fileName = d.toISOString().split(":").join("-") + ".txt",
+    filePath = dir + "/" + fileName;
 
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
@@ -126,6 +128,7 @@ function writeToFile(dir, content) {
     }
   });
 }
+
 
 describe('Marbles', function () {
   // Change timeout to 60s from the default of 2s

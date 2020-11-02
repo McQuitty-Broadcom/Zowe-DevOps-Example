@@ -28,7 +28,7 @@ var assert = require('assert'),
 */
 function createMarble(color, quantity=1, cost=1, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' CRE ' + color + " " + quantity + " " + cost + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} CRE ${color} ${quantity} ${cost}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -46,7 +46,7 @@ function createMarble(color, quantity=1, cost=1, callback) {
 */
 function deleteMarble(color, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' DEL ' + color + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} DEL ${color}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
@@ -64,7 +64,7 @@ function deleteMarble(color, callback) {
 *
 */
 function getMarbleQuantity(color, callback) {
-  var command = 'zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj';
+  var command = `zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj`;
 
   cmd.get(command, function(err, data, stderr) {
     //log output
@@ -98,7 +98,7 @@ function getMarbleQuantity(color, callback) {
 */
 function updateMarble(color, quantity, callback) {
   cmd.get(
-    'zowe console issue command "F ' + config.cicsRegion + ',' + config.cicsTran + ' UPD ' + color + " " + quantity + '" --cn ' + config.cicsConsole,
+    `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} UPD ${color} ${quantity}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
       //log output
       var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;

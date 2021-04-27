@@ -2,7 +2,7 @@
     "bindGrantJCL"              : "CUST001.MARBLES.JCL(MARBIND)",
     "cicsConsole"               : "CUST001",
     "cicsPort"                  : 6000,
-    "cicsProgram"               : "MARBLE01",
+    "cicsProgram"               : "MARBLE_NUM",
     "cicsProtocol"              : "https",
     "cicsRegion"                : "CICSTRN1",
     "cicsRejectUnauthorized"    : false,
@@ -17,8 +17,8 @@
     "endevorRejectUnauthorized" : false,
     "endevorSubsystem"          : "MARBLES",
     "endevorSystem"             : "MARBLES",
-    "marbleColor"               : "RED",
-    "testElement"               : "MARBLE01",
+    "marbleColor"               : "COLOR",
+    "testElement"               : "MARBLE_NUM",
     "zosmfPort"                 : 443,
     "zosmfRejectUnauthorized"   : false
 }

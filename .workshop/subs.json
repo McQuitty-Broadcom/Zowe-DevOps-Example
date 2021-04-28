@@ -265,7 +265,7 @@
         "CONSOLE" : "cust015",
         "MARBLE_CICS" : "MB15",
         "MARBLE_NUM" : "MARBLE15",
-        "COLOR" : "TAN",
+        "COLOR" : "LAVENDER",
         "GITHUB_USER" : "zowe-015",
         "GITHUB_PASS" : "Zowe-Workshop-015",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-015/invitations"
@@ -283,7 +283,7 @@
         "CONSOLE" : "cust016",
         "MARBLE_CICS" : "MB16",
         "MARBLE_NUM" : "MARBLE16",
-        "COLOR" : "AQUA",
+        "COLOR" : "TAN",
         "GITHUB_USER" : "zowe-016",
         "GITHUB_PASS" : "Zowe-Workshop-016",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-016/invitations"
@@ -301,7 +301,7 @@
         "CONSOLE" : "cust017",
         "MARBLE_CICS" : "MB17",
         "MARBLE_NUM" : "MARBLE17",
-        "COLOR" : "MAROON",
+        "COLOR" : "AQUA",
         "GITHUB_USER" : "zowe-017",
         "GITHUB_PASS" : "Zowe-Workshop-017",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-017/invitations"
@@ -319,7 +319,7 @@
         "CONSOLE" : "cust018",
         "MARBLE_CICS" : "MB18",
         "MARBLE_NUM" : "MARBLE18",
-        "COLOR" : "OLIVE",
+        "COLOR" : "MAROON",
         "GITHUB_USER" : "zowe-018",
         "GITHUB_PASS" : "Zowe-Workshop-018",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-018/invitations"
@@ -337,7 +337,7 @@
         "CONSOLE" : "cust019",
         "MARBLE_CICS" : "MB19",
         "MARBLE_NUM" : "MARBLE19",
-        "COLOR" : "TEAL",
+        "COLOR" : "OLIVE",
         "GITHUB_USER" : "zowe-019",
         "GITHUB_PASS" : "Zowe-Workshop-019",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-019/invitations"
@@ -355,7 +355,7 @@
         "CONSOLE" : "cust020",
         "MARBLE_CICS" : "MB20",
         "MARBLE_NUM" : "MARBLE20",
-        "COLOR" : "CORAL",
+        "COLOR" : "TEAL",
         "GITHUB_USER" : "zowe-020",
         "GITHUB_PASS" : "Zowe-Workshop-020",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-020/invitations"
@@ -373,7 +373,7 @@
         "CONSOLE" : "cust021",
         "MARBLE_CICS" : "MB21",
         "MARBLE_NUM" : "MARBLE21",
-        "COLOR" : "ROSE",
+        "COLOR" : "CORAL",
         "GITHUB_USER" : "zowe-021",
         "GITHUB_PASS" : "Zowe-Workshop-021",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-021/invitations"
@@ -391,7 +391,7 @@
         "CONSOLE" : "cust022",
         "MARBLE_CICS" : "MB22",
         "MARBLE_NUM" : "MARBLE22",
-        "COLOR" : "SAND",
+        "COLOR" : "ROSE",
         "GITHUB_USER" : "zowe-022",
         "GITHUB_PASS" : "Zowe-Workshop-022",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-022/invitations"
@@ -409,7 +409,7 @@
         "CONSOLE" : "cust023",
         "MARBLE_CICS" : "MB23",
         "MARBLE_NUM" : "MARBLE23",
-        "COLOR" : "PURPLE",
+        "COLOR" : "SAND",
         "GITHUB_USER" : "zowe-023",
         "GITHUB_PASS" : "Zowe-Workshop-023",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-023/invitations"
@@ -427,7 +427,7 @@
         "CONSOLE" : "cust024",
         "MARBLE_CICS" : "MB24",
         "MARBLE_NUM" : "MARBLE24",
-        "COLOR" : "GOLD",
+        "COLOR" : "PURPLE",
         "GITHUB_USER" : "zowe-024",
         "GITHUB_PASS" : "Zowe-Workshop-024",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-024/invitations"
@@ -445,7 +445,7 @@
         "CONSOLE" : "cust025",
         "MARBLE_CICS" : "MB25",
         "MARBLE_NUM" : "MARBLE25",
-        "COLOR" : "SILVER",
+        "COLOR" : "GOLD",
         "GITHUB_USER" : "zowe-025",
         "GITHUB_PASS" : "Zowe-Workshop-025",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-025/invitations"
@@ -463,7 +463,7 @@
         "CONSOLE" : "cust026",
         "MARBLE_CICS" : "MB26",
         "MARBLE_NUM" : "MARBLE26",
-        "COLOR" : "BRONZE",
+        "COLOR" : "SILVER",
         "GITHUB_USER" : "zowe-026",
         "GITHUB_PASS" : "Zowe-Workshop-026",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-026/invitations"
@@ -481,7 +481,7 @@
         "CONSOLE" : "cust027",
         "MARBLE_CICS" : "MB27",
         "MARBLE_NUM" : "MARBLE27",
-        "COLOR" : "PEACH",
+        "COLOR" : "BRONZE",
         "GITHUB_USER" : "zowe-027",
         "GITHUB_PASS" : "Zowe-Workshop-027",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-027/invitations"
@@ -499,7 +499,7 @@
         "CONSOLE" : "cust028",
         "MARBLE_CICS" : "MB28",
         "MARBLE_NUM" : "MARBLE28",
-        "COLOR" : "LIME",
+        "COLOR" : "PEACH",
         "GITHUB_USER" : "zowe-028",
         "GITHUB_PASS" : "Zowe-Workshop-028",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-028/invitations"
@@ -517,7 +517,7 @@
         "CONSOLE" : "cust029",
         "MARBLE_CICS" : "MB29",
         "MARBLE_NUM" : "MARBLE29",
-        "COLOR" : "LAVENDER",
+        "COLOR" : "LIME",
         "GITHUB_USER" : "zowe-029",
         "GITHUB_PASS" : "Zowe-Workshop-029",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-029/invitations"
@@ -535,7 +535,7 @@
         "CONSOLE" : "cust030",
         "MARBLE_CICS" : "MB30",
         "MARBLE_NUM" : "MARBLE30",
-        "COLOR" : "UNKNOWN",
+        "COLOR" : "PEAR",
         "GITHUB_USER" : "zowe-030",
         "GITHUB_PASS" : "Zowe-Workshop-030",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-030/invitations"

@@ -214,7 +214,8 @@ describe('Marbles', function () {
             if(err){
               throw err;
             }
-            assert.equal(quantity, 1, "Inventory is not as expected");
+            assert.equal(quantity, 2, "Inventory is not as expected");
+            assert.equal(cost, 2, "Inventory is not as expected");
             done();
           });
         }

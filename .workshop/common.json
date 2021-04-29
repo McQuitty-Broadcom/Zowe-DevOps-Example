@@ -1,7 +1,7 @@
 {
         "GITHUB_ORG" : "chipset",
-        "JENKINS_URL" : "http://jenkins-107.178.216.138.nip.io/",
-        "CHE_URL" : "http://che-che-ns.107.178.216.138.nip.io/",
+        "JENKINS_URL" : "http://jenkins-34.105.182.87.nip.io/",
+        "CHE_URL" : "http://che-che-ns.34.105.182.87.nip.io/",
         "CHE_TERMINAL" : "zowe/cli",
         "CHE_STACK" : "Workshop Stack",
         "APIML_CATALOG" : "https://10.175.80.66:10310/ui/v1/apicatalog",

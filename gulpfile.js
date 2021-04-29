@@ -220,8 +220,6 @@ gulp.task('copy', 'Copy LOADLIB & DBRMLIB to test environment', function (callba
   submitJobAndDownloadOutput(ds, "job-archive/copy", 4, callback);
 });
 
-gulp.task('deploy', 'Deploy Program', gulpSequence('copy','bind-n-grant','cics-refresh'));
-
 gulp.task('setupProfiles', 'Create project profiles and set them as default', function (callback) {
   var host, user, pass;
   host = readlineSync.question('Host name or IP address: ');

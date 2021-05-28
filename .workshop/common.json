@@ -1,6 +1,6 @@
 {
         "GITHUB_ORG" : "chipset",
-        "JENKINS_URL" : "http://mfwsone.broadcom.com/jenkins/   ",
+        "JENKINS_URL" : "http://mfwsone.broadcom.com/jenkins/",
         "CHE_URL" : "http://mfwsone.broadcom.com/dashboard/",
         "CHE_TERMINAL" : "zowe/cli",
         "CHE_STACK" : "Workshop Stack",

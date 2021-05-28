@@ -14,7 +14,7 @@
         "MARBLE_NUM" : "MARBLE01",
         "MARBLE_COLOR" : "RED",
         "GITHUB_USER" : "zowe-001",
-        "GITHUB_PASS" : "Zowe-Workshop-01",
+        "GITHUB_PASS" : "Zowe-Workshop-1",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-01/invitations"
     } ,
     "2" :  {
@@ -51,7 +51,7 @@
         "MARBLE_NUM" : "MARBLE03",
         "MARBLE_COLOR" : "YELLOW",
         "GITHUB_USER" : "zowe-003",
-        "GITHUB_PASS" : "Zowe-Workshop-03",
+        "GITHUB_PASS" : "Zowe-Workshop-3",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-03/invitations"
     }, 
     "4" :  {
@@ -69,7 +69,7 @@
         "MARBLE_NUM" : "MARBLE04",
         "MARBLE_COLOR" : "GREEN",
         "GITHUB_USER" : "zowe-004",
-        "GITHUB_PASS" : "Zowe-Workshop-04",
+        "GITHUB_PASS" : "Zowe-Workshop-4",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-04/invitations"
     }, 
     "5" :  {
@@ -87,7 +87,7 @@
         "MARBLE_NUM" : "MARBLE05",
         "MARBLE_COLOR" : "BLUE",
         "GITHUB_USER" : "zowe-005",
-        "GITHUB_PASS" : "Zowe-Workshop-05",
+        "GITHUB_PASS" : "Zowe-Workshop-5",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-05/invitations"
     }, 
     "6" :  {
@@ -105,7 +105,7 @@
         "MARBLE_NUM" : "MARBLE06",
         "MARBLE_COLOR" : "INDIGO",
         "GITHUB_USER" : "zowe-006",
-        "GITHUB_PASS" : "Zowe-Workshop-06",
+        "GITHUB_PASS" : "Zowe-Workshop-6",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-06/invitations"
     }, 
     "7" :  {
@@ -123,7 +123,7 @@
         "MARBLE_NUM" : "MARBLE07",
         "MARBLE_COLOR" : "VIOLET",
         "GITHUB_USER" : "zowe-007",
-        "GITHUB_PASS" : "Zowe-Workshop-07",
+        "GITHUB_PASS" : "Zowe-Workshop-7",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-07/invitations"
     }, 
     "8" :  {
@@ -141,7 +141,7 @@
         "MARBLE_NUM" : "MARBLE08",
         "MARBLE_COLOR" : "BLACK",
         "GITHUB_USER" : "zowe-008",
-        "GITHUB_PASS" : "Zowe-Workshop-08",
+        "GITHUB_PASS" : "Zowe-Workshop-8",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-08/invitations"
     }, 
     "9" :  {
@@ -159,7 +159,7 @@
         "MARBLE_NUM" : "MARBLE09",
         "MARBLE_COLOR" : "GRAY",
         "GITHUB_USER" : "zowe-009",
-        "GITHUB_PASS" : "Zowe-Workshop-09",
+        "GITHUB_PASS" : "Zowe-Workshop-9",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-09/invitations"
     }, 
     "10" :  {
@@ -177,7 +177,7 @@
         "MARBLE_NUM" : "MARBLE10",
         "MARBLE_COLOR" : "BROWN",
         "GITHUB_USER" : "zowe-0010",
-        "GITHUB_PASS" : "Zowe-Workshop-010",
+        "GITHUB_PASS" : "Zowe-Workshop-10",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-010/invitations"
     }, 
     "11" :  {
@@ -195,7 +195,7 @@
         "MARBLE_NUM" : "MARBLE11",
         "MARBLE_COLOR" : "NAVY",
         "GITHUB_USER" : "zowe-011",
-        "GITHUB_PASS" : "Zowe-Workshop-011",
+        "GITHUB_PASS" : "Zowe-Workshop-11",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-011/invitations"
     }, 
     "12" :  {
@@ -213,7 +213,7 @@
         "MARBLE_NUM" : "MARBLE12",
         "MARBLE_COLOR" : "CYAN",
         "GITHUB_USER" : "zowe-012",
-        "GITHUB_PASS" : "Zowe-Workshop-012",
+        "GITHUB_PASS" : "Zowe-Workshop-12",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-012/invitations"
     }, 
     "13" :  {
@@ -231,7 +231,7 @@
         "MARBLE_NUM" : "MARBLE13",
         "MARBLE_COLOR" : "MAGENTA",
         "GITHUB_USER" : "zowe-013",
-        "GITHUB_PASS" : "Zowe-Workshop-013",
+        "GITHUB_PASS" : "Zowe-Workshop-13",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-013/invitations"
     }, 
     "14" :  {
@@ -249,7 +249,7 @@
         "MARBLE_NUM" : "MARBLE14",
         "MARBLE_COLOR" : "PINK",
         "GITHUB_USER" : "zowe-014",
-        "GITHUB_PASS" : "Zowe-Workshop-014",
+        "GITHUB_PASS" : "Zowe-Workshop-14",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-014/invitations"
     }, 
     "15" :  {
@@ -267,7 +267,7 @@
         "MARBLE_NUM" : "MARBLE15",
         "MARBLE_COLOR" : "LAVENDER",
         "GITHUB_USER" : "zowe-015",
-        "GITHUB_PASS" : "Zowe-Workshop-015",
+        "GITHUB_PASS" : "Zowe-Workshop-15",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-015/invitations"
     }, 
     "16" :  {
@@ -285,7 +285,7 @@
         "MARBLE_NUM" : "MARBLE16",
         "MARBLE_COLOR" : "TAN",
         "GITHUB_USER" : "zowe-016",
-        "GITHUB_PASS" : "Zowe-Workshop-016",
+        "GITHUB_PASS" : "Zowe-Workshop-16",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-016/invitations"
     }, 
     "17" :  {
@@ -303,7 +303,7 @@
         "MARBLE_NUM" : "MARBLE17",
         "MARBLE_COLOR" : "AQUA",
         "GITHUB_USER" : "zowe-017",
-        "GITHUB_PASS" : "Zowe-Workshop-017",
+        "GITHUB_PASS" : "Zowe-Workshop-17",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-017/invitations"
     }, 
     "18" :  {
@@ -321,7 +321,7 @@
         "MARBLE_NUM" : "MARBLE18",
         "MARBLE_COLOR" : "MAROON",
         "GITHUB_USER" : "zowe-018",
-        "GITHUB_PASS" : "Zowe-Workshop-018",
+        "GITHUB_PASS" : "Zowe-Workshop-18",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-018/invitations"
     }, 
     "19" :  {
@@ -339,7 +339,7 @@
         "MARBLE_NUM" : "MARBLE19",
         "MARBLE_COLOR" : "OLIVE",
         "GITHUB_USER" : "zowe-019",
-        "GITHUB_PASS" : "Zowe-Workshop-019",
+        "GITHUB_PASS" : "Zowe-Workshop-19",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-019/invitations"
     }, 
     "20" :  {
@@ -357,7 +357,7 @@
         "MARBLE_NUM" : "MARBLE20",
         "MARBLE_COLOR" : "TEAL",
         "GITHUB_USER" : "zowe-020",
-        "GITHUB_PASS" : "Zowe-Workshop-020",
+        "GITHUB_PASS" : "Zowe-Workshop-20",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-020/invitations"
     }, 
     "21" :  {
@@ -375,7 +375,7 @@
         "MARBLE_NUM" : "MARBLE21",
         "MARBLE_COLOR" : "CORAL",
         "GITHUB_USER" : "zowe-021",
-        "GITHUB_PASS" : "Zowe-Workshop-021",
+        "GITHUB_PASS" : "Zowe-Workshop-21",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-021/invitations"
     }, 
     "22" :  {
@@ -393,7 +393,7 @@
         "MARBLE_NUM" : "MARBLE22",
         "MARBLE_COLOR" : "ROSE",
         "GITHUB_USER" : "zowe-022",
-        "GITHUB_PASS" : "Zowe-Workshop-022",
+        "GITHUB_PASS" : "Zowe-Workshop-22",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-022/invitations"
     }, 
     "23" :  {
@@ -411,7 +411,7 @@
         "MARBLE_NUM" : "MARBLE23",
         "MARBLE_COLOR" : "SAND",
         "GITHUB_USER" : "zowe-023",
-        "GITHUB_PASS" : "Zowe-Workshop-023",
+        "GITHUB_PASS" : "Zowe-Workshop-23",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-023/invitations"
     }, 
     "24" :  {
@@ -429,7 +429,7 @@
         "MARBLE_NUM" : "MARBLE24",
         "MARBLE_COLOR" : "PURPLE",
         "GITHUB_USER" : "zowe-024",
-        "GITHUB_PASS" : "Zowe-Workshop-024",
+        "GITHUB_PASS" : "Zowe-Workshop-24",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-024/invitations"
     }, 
     "25" :  {
@@ -447,7 +447,7 @@
         "MARBLE_NUM" : "MARBLE25",
         "MARBLE_COLOR" : "GOLD",
         "GITHUB_USER" : "zowe-025",
-        "GITHUB_PASS" : "Zowe-Workshop-025",
+        "GITHUB_PASS" : "Zowe-Workshop-25",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-025/invitations"
     }, 
     "26" :  {
@@ -465,7 +465,7 @@
         "MARBLE_NUM" : "MARBLE26",
         "MARBLE_COLOR" : "SILVER",
         "GITHUB_USER" : "zowe-026",
-        "GITHUB_PASS" : "Zowe-Workshop-026",
+        "GITHUB_PASS" : "Zowe-Workshop-26",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-026/invitations"
     }, 
     "27" :  {
@@ -483,7 +483,7 @@
         "MARBLE_NUM" : "MARBLE27",
         "MARBLE_COLOR" : "BRONZE",
         "GITHUB_USER" : "zowe-027",
-        "GITHUB_PASS" : "Zowe-Workshop-027",
+        "GITHUB_PASS" : "Zowe-Workshop-27",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-027/invitations"
     }, 
     "28" :  {
@@ -501,7 +501,7 @@
         "MARBLE_NUM" : "MARBLE28",
         "MARBLE_COLOR" : "PEACH",
         "GITHUB_USER" : "zowe-028",
-        "GITHUB_PASS" : "Zowe-Workshop-028",
+        "GITHUB_PASS" : "Zowe-Workshop-28",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-028/invitations"
     }, 
     "29" :  {
@@ -519,7 +519,7 @@
         "MARBLE_NUM" : "MARBLE29",
         "MARBLE_COLOR" : "LIME",
         "GITHUB_USER" : "zowe-029",
-        "GITHUB_PASS" : "Zowe-Workshop-029",
+        "GITHUB_PASS" : "Zowe-Workshop-29",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-029/invitations"
     }, 
     "30" :  {
@@ -537,7 +537,7 @@
         "MARBLE_NUM" : "MARBLE30",
         "MARBLE_COLOR" : "PEAR",
         "GITHUB_USER" : "zowe-030",
-        "GITHUB_PASS" : "Zowe-Workshop-030",
+        "GITHUB_PASS" : "Zowe-Workshop-30",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-030/invitations"
     }
 }

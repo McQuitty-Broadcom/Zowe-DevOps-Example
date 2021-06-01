@@ -17,7 +17,7 @@
     "endevorRejectUnauthorized" : false,
     "endevorSubsystem"          : "MARBLES",
     "endevorSystem"             : "MARBLES",
-    "marbleColor"               : "COLOR",
+    "marbleColor"               : "MARBLE_COLOR",
     "testElement"               : "MARBLE_NUM",
     "zosmfPort"                 : 443,
     "zosmfRejectUnauthorized"   : false

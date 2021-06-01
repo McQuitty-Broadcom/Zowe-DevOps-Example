@@ -51,7 +51,7 @@
         "MARBLE_NUM" : "MARBLE03",
         "MARBLE_COLOR" : "YELLOW",
         "GITHUB_USER" : "zowe-003",
-        "GITHUB_PASS" : "Zowe-Workshop-3",
+        "GITHUB_PASS" : "Zowe-Workshop-03",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-03/invitations"
     }, 
     "4" :  {
@@ -69,7 +69,7 @@
         "MARBLE_NUM" : "MARBLE04",
         "MARBLE_COLOR" : "GREEN",
         "GITHUB_USER" : "zowe-004",
-        "GITHUB_PASS" : "Zowe-Workshop-4",
+        "GITHUB_PASS" : "Zowe-Workshop-04",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-04/invitations"
     }, 
     "5" :  {
@@ -87,7 +87,7 @@
         "MARBLE_NUM" : "MARBLE05",
         "MARBLE_COLOR" : "BLUE",
         "GITHUB_USER" : "zowe-005",
-        "GITHUB_PASS" : "Zowe-Workshop-5",
+        "GITHUB_PASS" : "Zowe-Workshop-05",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-05/invitations"
     }, 
     "6" :  {
@@ -105,7 +105,7 @@
         "MARBLE_NUM" : "MARBLE06",
         "MARBLE_COLOR" : "INDIGO",
         "GITHUB_USER" : "zowe-006",
-        "GITHUB_PASS" : "Zowe-Workshop-6",
+        "GITHUB_PASS" : "Zowe-Workshop-06",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-06/invitations"
     }, 
     "7" :  {
@@ -123,7 +123,7 @@
         "MARBLE_NUM" : "MARBLE07",
         "MARBLE_COLOR" : "VIOLET",
         "GITHUB_USER" : "zowe-007",
-        "GITHUB_PASS" : "Zowe-Workshop-7",
+        "GITHUB_PASS" : "Zowe-Workshop-07",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-07/invitations"
     }, 
     "8" :  {
@@ -141,7 +141,7 @@
         "MARBLE_NUM" : "MARBLE08",
         "MARBLE_COLOR" : "BLACK",
         "GITHUB_USER" : "zowe-008",
-        "GITHUB_PASS" : "Zowe-Workshop-8",
+        "GITHUB_PASS" : "Zowe-Workshop-08",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-08/invitations"
     }, 
     "9" :  {
@@ -159,7 +159,7 @@
         "MARBLE_NUM" : "MARBLE09",
         "MARBLE_COLOR" : "GRAY",
         "GITHUB_USER" : "zowe-009",
-        "GITHUB_PASS" : "Zowe-Workshop-9",
+        "GITHUB_PASS" : "Zowe-Workshop-09",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-09/invitations"
     }, 
     "10" :  {

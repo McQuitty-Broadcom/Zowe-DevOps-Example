@@ -165,7 +165,7 @@
     "10" :  {
         "MAINFRAME_USER" : "CUST010",
         "MAINFRAME_PASS" : "CUST010",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-010",
+        "GITHUB_PROJ" : "Zowe-DevOps-A-10",
         "JENKINS_USER" : "workshop_010",
         "JENKINS_PASS" : "010_workshop",
         "CHE_USER" : "workshop_010",
@@ -178,7 +178,7 @@
         "MARBLE_COLOR" : "BROWN",
         "GITHUB_USER" : "zowe-0010",
         "GITHUB_PASS" : "Zowe-Workshop-10",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-010/invitations"
+        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-10/invitations"
     }, 
     "11" :  {
         "MAINFRAME_USER" : "CUST011",

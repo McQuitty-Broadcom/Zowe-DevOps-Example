@@ -2,7 +2,7 @@
     "1" :  {
         "MAINFRAME_USER" : "CUST001",
         "MAINFRAME_PASS" : "CUST001",
-        "GITHUB_PROJ" : "Zowe-DevOps-Z-01",
+        "GITHUB_PROJ" : "Zowe-DevOps-A-01",
         "JENKINS_USER" : "workshop_001",
         "JENKINS_PASS" : "001_workshop",
         "CHE_USER" : "workshop_001",
@@ -20,7 +20,7 @@
     "2" :  {
         "MAINFRAME_USER" : "CUST002",
         "MAINFRAME_PASS" : "CUST002",
-        "GITHUB_PROJ" : "Zowe-DevOps-Z-02",
+        "GITHUB_PROJ" : "Zowe-DevOps-A-02",
         "GITBRIDGE_PROJ" : "GitBridgePlaceholder",
         "JENKINS_USER" : "workshop_002",
         "JENKINS_PASS" : "002_workshop",

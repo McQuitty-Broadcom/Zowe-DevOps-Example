@@ -20,7 +20,7 @@
     "2" :  {
         "MAINFRAME_USER" : "CUST002",
         "MAINFRAME_PASS" : "CUST002",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-02",
+        "GITHUB_PROJ" : "Zowe-DevOps-B-02",
         "GITBRIDGE_PROJ" : "GitBridgePlaceholder",
         "JENKINS_USER" : "workshop_002",
         "JENKINS_PASS" : "002_workshop",
@@ -33,13 +33,13 @@
         "MARBLE_NUM" : "MARBLE02",
         "MARBLE_COLOR" : "ORANGE",
         "GITHUB_USER" : "zowe-002",
-        "GITHUB_PASS" : "Zowe-Workshop-A-02",
+        "GITHUB_PASS" : "Zowe-Workshop-02",
         "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-02/invitations"
     } ,
     "3" :  {
         "MAINFRAME_USER" : "CUST003",
         "MAINFRAME_PASS" : "CUST003",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-03",
+        "GITHUB_PROJ" : "Zowe-DevOps-C-03",
         "JENKINS_USER" : "workshop_003",
         "JENKINS_PASS" : "003_workshop",
         "CHE_USER" : "workshop_003",

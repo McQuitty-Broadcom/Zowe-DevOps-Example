@@ -15,7 +15,7 @@
         "MARBLE_COLOR" : "RED",
         "GITHUB_USER" : "zowe-001",
         "GITHUB_PASS" : "Zowe-Workshop-01",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-01/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-01/invitations"
     } ,
     "2" :  {
         "MAINFRAME_USER" : "CUST002",
@@ -34,7 +34,7 @@
         "MARBLE_COLOR" : "ORANGE",
         "GITHUB_USER" : "zowe-002",
         "GITHUB_PASS" : "Zowe-Workshop-02",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-02/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-02/invitations"
     } ,
     "3" :  {
         "MAINFRAME_USER" : "CUST003",
@@ -52,7 +52,7 @@
         "MARBLE_COLOR" : "YELLOW",
         "GITHUB_USER" : "zowe-003",
         "GITHUB_PASS" : "Zowe-Workshop-03",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-03/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-03/invitations"
     }, 
     "4" :  {
         "MAINFRAME_USER" : "CUST004",
@@ -70,7 +70,7 @@
         "MARBLE_COLOR" : "GREEN",
         "GITHUB_USER" : "zowe-004",
         "GITHUB_PASS" : "Zowe-Workshop-04",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-04/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-04/invitations"
     }, 
     "5" :  {
         "MAINFRAME_USER" : "CUST005",
@@ -88,7 +88,7 @@
         "MARBLE_COLOR" : "BLUE",
         "GITHUB_USER" : "zowe-005",
         "GITHUB_PASS" : "Zowe-Workshop-05",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-05/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-05/invitations"
     }, 
     "6" :  {
         "MAINFRAME_USER" : "CUST006",
@@ -106,7 +106,7 @@
         "MARBLE_COLOR" : "INDIGO",
         "GITHUB_USER" : "zowe-006",
         "GITHUB_PASS" : "Zowe-Workshop-06",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-06/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-06/invitations"
     }, 
     "7" :  {
         "MAINFRAME_USER" : "CUST007",
@@ -124,7 +124,7 @@
         "MARBLE_COLOR" : "VIOLET",
         "GITHUB_USER" : "zowe-007",
         "GITHUB_PASS" : "Zowe-Workshop-07",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-07/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-07/invitations"
     }, 
     "8" :  {
         "MAINFRAME_USER" : "CUST008",
@@ -142,7 +142,7 @@
         "MARBLE_COLOR" : "BLACK",
         "GITHUB_USER" : "zowe-008",
         "GITHUB_PASS" : "Zowe-Workshop-08",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-08/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-08/invitations"
     }, 
     "9" :  {
         "MAINFRAME_USER" : "CUST009",
@@ -160,7 +160,7 @@
         "MARBLE_COLOR" : "GRAY",
         "GITHUB_USER" : "zowe-009",
         "GITHUB_PASS" : "Zowe-Workshop-09",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-09/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-09/invitations"
     }, 
     "10" :  {
         "MAINFRAME_USER" : "CUST010",
@@ -178,7 +178,7 @@
         "MARBLE_COLOR" : "BROWN",
         "GITHUB_USER" : "zowe-0010",
         "GITHUB_PASS" : "Zowe-Workshop-10",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-10/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-10/invitations"
     }, 
     "11" :  {
         "MAINFRAME_USER" : "CUST011",
@@ -196,7 +196,7 @@
         "MARBLE_COLOR" : "NAVY",
         "GITHUB_USER" : "zowe-011",
         "GITHUB_PASS" : "Zowe-Workshop-11",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-011/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-011/invitations"
     }, 
     "12" :  {
         "MAINFRAME_USER" : "CUST012",
@@ -214,7 +214,7 @@
         "MARBLE_COLOR" : "CYAN",
         "GITHUB_USER" : "zowe-012",
         "GITHUB_PASS" : "Zowe-Workshop-12",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-012/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-012/invitations"
     }, 
     "13" :  {
         "MAINFRAME_USER" : "CUST013",
@@ -232,7 +232,7 @@
         "MARBLE_COLOR" : "MAGENTA",
         "GITHUB_USER" : "zowe-013",
         "GITHUB_PASS" : "Zowe-Workshop-13",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-013/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-013/invitations"
     }, 
     "14" :  {
         "MAINFRAME_USER" : "CUST014",
@@ -250,7 +250,7 @@
         "MARBLE_COLOR" : "PINK",
         "GITHUB_USER" : "zowe-014",
         "GITHUB_PASS" : "Zowe-Workshop-14",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-014/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-014/invitations"
     }, 
     "15" :  {
         "MAINFRAME_USER" : "CUST015",
@@ -268,7 +268,7 @@
         "MARBLE_COLOR" : "LAVENDER",
         "GITHUB_USER" : "zowe-015",
         "GITHUB_PASS" : "Zowe-Workshop-15",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-015/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-015/invitations"
     }, 
     "16" :  {
         "MAINFRAME_USER" : "CUST016",
@@ -286,7 +286,7 @@
         "MARBLE_COLOR" : "TAN",
         "GITHUB_USER" : "zowe-016",
         "GITHUB_PASS" : "Zowe-Workshop-16",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-016/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-016/invitations"
     }, 
     "17" :  {
         "MAINFRAME_USER" : "CUST017",
@@ -304,7 +304,7 @@
         "MARBLE_COLOR" : "AQUA",
         "GITHUB_USER" : "zowe-017",
         "GITHUB_PASS" : "Zowe-Workshop-17",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-017/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-017/invitations"
     }, 
     "18" :  {
         "MAINFRAME_USER" : "CUST018",
@@ -322,7 +322,7 @@
         "MARBLE_COLOR" : "MAROON",
         "GITHUB_USER" : "zowe-018",
         "GITHUB_PASS" : "Zowe-Workshop-18",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-018/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-018/invitations"
     }, 
     "19" :  {
         "MAINFRAME_USER" : "CUST019",
@@ -340,7 +340,7 @@
         "MARBLE_COLOR" : "OLIVE",
         "GITHUB_USER" : "zowe-019",
         "GITHUB_PASS" : "Zowe-Workshop-19",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-019/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-019/invitations"
     }, 
     "20" :  {
         "MAINFRAME_USER" : "CUST020",
@@ -358,7 +358,7 @@
         "MARBLE_COLOR" : "TEAL",
         "GITHUB_USER" : "zowe-020",
         "GITHUB_PASS" : "Zowe-Workshop-20",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-020/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-020/invitations"
     }, 
     "21" :  {
         "MAINFRAME_USER" : "CUST021",
@@ -376,7 +376,7 @@
         "MARBLE_COLOR" : "CORAL",
         "GITHUB_USER" : "zowe-021",
         "GITHUB_PASS" : "Zowe-Workshop-21",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-021/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-021/invitations"
     }, 
     "22" :  {
         "MAINFRAME_USER" : "CUST022",
@@ -394,7 +394,7 @@
         "MARBLE_COLOR" : "ROSE",
         "GITHUB_USER" : "zowe-022",
         "GITHUB_PASS" : "Zowe-Workshop-22",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-022/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-022/invitations"
     }, 
     "23" :  {
         "MAINFRAME_USER" : "CUST023",
@@ -412,7 +412,7 @@
         "MARBLE_COLOR" : "SAND",
         "GITHUB_USER" : "zowe-023",
         "GITHUB_PASS" : "Zowe-Workshop-23",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-023/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-023/invitations"
     }, 
     "24" :  {
         "MAINFRAME_USER" : "CUST024",
@@ -430,7 +430,7 @@
         "MARBLE_COLOR" : "PURPLE",
         "GITHUB_USER" : "zowe-024",
         "GITHUB_PASS" : "Zowe-Workshop-24",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-024/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-024/invitations"
     }, 
     "25" :  {
         "MAINFRAME_USER" : "CUST025",
@@ -448,7 +448,7 @@
         "MARBLE_COLOR" : "GOLD",
         "GITHUB_USER" : "zowe-025",
         "GITHUB_PASS" : "Zowe-Workshop-25",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-025/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-025/invitations"
     }, 
     "26" :  {
         "MAINFRAME_USER" : "CUST026",
@@ -466,7 +466,7 @@
         "MARBLE_COLOR" : "SILVER",
         "GITHUB_USER" : "zowe-026",
         "GITHUB_PASS" : "Zowe-Workshop-26",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-026/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-026/invitations"
     }, 
     "27" :  {
         "MAINFRAME_USER" : "CUST027",
@@ -484,7 +484,7 @@
         "MARBLE_COLOR" : "BRONZE",
         "GITHUB_USER" : "zowe-027",
         "GITHUB_PASS" : "Zowe-Workshop-27",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-027/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-027/invitations"
     }, 
     "28" :  {
         "MAINFRAME_USER" : "CUST028",
@@ -502,7 +502,7 @@
         "MARBLE_COLOR" : "PEACH",
         "GITHUB_USER" : "zowe-028",
         "GITHUB_PASS" : "Zowe-Workshop-28",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-028/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-028/invitations"
     }, 
     "29" :  {
         "MAINFRAME_USER" : "CUST029",
@@ -520,7 +520,7 @@
         "MARBLE_COLOR" : "LIME",
         "GITHUB_USER" : "zowe-029",
         "GITHUB_PASS" : "Zowe-Workshop-29",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-029/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-029/invitations"
     }, 
     "30" :  {
         "MAINFRAME_USER" : "CUST030",
@@ -538,6 +538,6 @@
         "MARBLE_COLOR" : "PEAR",
         "GITHUB_USER" : "zowe-030",
         "GITHUB_PASS" : "Zowe-Workshop-30",
-        "GITHUB_LINK" : "https://github.com/chipset/Zowe-DevOps-A-030/invitations"
+        "GITHUB_LINK" : "https://github.com/McQuitty-Broadcom/Zowe-DevOps-A-030/invitations"
     }
 }

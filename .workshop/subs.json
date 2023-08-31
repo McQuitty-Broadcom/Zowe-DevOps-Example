@@ -2,7 +2,7 @@
     "1" :  {
         "MAINFRAME_USER" : "CUST001",
         "MAINFRAME_PASS" : "CUST001",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-01",
+        "GITHUB_PROJ" : "Zowe-DevOps-01",
         "JENKINS_USER" : "workshop_001",
         "JENKINS_PASS" : "001_workshop",
         "CHE_USER" : "workshop_001",
@@ -15,12 +15,12 @@
         "MARBLE_COLOR" : "RED",
         "GITHUB_USER" : "zowe-001",
         "GITHUB_PASS" : "Zowe-Workshop-01",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-01/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-01/invitations"
     } ,
     "2" :  {
         "MAINFRAME_USER" : "CUST002",
         "MAINFRAME_PASS" : "CUST002",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-02",
+        "GITHUB_PROJ" : "Zowe-DevOps-02",
         "GITBRIDGE_PROJ" : "GitBridgePlaceholder",
         "JENKINS_USER" : "workshop_002",
         "JENKINS_PASS" : "002_workshop",
@@ -34,12 +34,12 @@
         "MARBLE_COLOR" : "ORANGE",
         "GITHUB_USER" : "zowe-002",
         "GITHUB_PASS" : "Zowe-Workshop-02",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-02/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-02/invitations"
     } ,
     "3" :  {
         "MAINFRAME_USER" : "CUST003",
         "MAINFRAME_PASS" : "CUST003",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-03",
+        "GITHUB_PROJ" : "Zowe-DevOps-03",
         "JENKINS_USER" : "workshop_003",
         "JENKINS_PASS" : "003_workshop",
         "CHE_USER" : "workshop_003",
@@ -52,12 +52,12 @@
         "MARBLE_COLOR" : "YELLOW",
         "GITHUB_USER" : "zowe-003",
         "GITHUB_PASS" : "Zowe-Workshop-03",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-03/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-03/invitations"
     }, 
     "4" :  {
         "MAINFRAME_USER" : "CUST004",
         "MAINFRAME_PASS" : "CUST004",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-04",
+        "GITHUB_PROJ" : "Zowe-DevOps-04",
         "JENKINS_USER" : "workshop_004",
         "JENKINS_PASS" : "004_workshop",
         "CHE_USER" : "workshop_004",
@@ -70,12 +70,12 @@
         "MARBLE_COLOR" : "GREEN",
         "GITHUB_USER" : "zowe-004",
         "GITHUB_PASS" : "Zowe-Workshop-04",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-04/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-04/invitations"
     }, 
     "5" :  {
         "MAINFRAME_USER" : "CUST005",
         "MAINFRAME_PASS" : "CUST005",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-05",
+        "GITHUB_PROJ" : "Zowe-DevOps-05",
         "JENKINS_USER" : "workshop_005",
         "JENKINS_PASS" : "005_workshop",
         "CHE_USER" : "workshop_005",
@@ -88,12 +88,12 @@
         "MARBLE_COLOR" : "BLUE",
         "GITHUB_USER" : "zowe-005",
         "GITHUB_PASS" : "Zowe-Workshop-05",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-05/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-05/invitations"
     }, 
     "6" :  {
         "MAINFRAME_USER" : "CUST006",
         "MAINFRAME_PASS" : "CUST006",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-06",
+        "GITHUB_PROJ" : "Zowe-DevOps-06",
         "JENKINS_USER" : "workshop_006",
         "JENKINS_PASS" : "006_workshop",
         "CHE_USER" : "workshop_006",
@@ -106,12 +106,12 @@
         "MARBLE_COLOR" : "INDIGO",
         "GITHUB_USER" : "zowe-006",
         "GITHUB_PASS" : "Zowe-Workshop-06",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-06/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-06/invitations"
     }, 
     "7" :  {
         "MAINFRAME_USER" : "CUST007",
         "MAINFRAME_PASS" : "CUST007",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-07",
+        "GITHUB_PROJ" : "Zowe-DevOps-07",
         "JENKINS_USER" : "workshop_007",
         "JENKINS_PASS" : "007_workshop",
         "CHE_USER" : "workshop_007",
@@ -124,12 +124,12 @@
         "MARBLE_COLOR" : "VIOLET",
         "GITHUB_USER" : "zowe-007",
         "GITHUB_PASS" : "Zowe-Workshop-07",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-07/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-07/invitations"
     }, 
     "8" :  {
         "MAINFRAME_USER" : "CUST008",
         "MAINFRAME_PASS" : "CUST008",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-08",
+        "GITHUB_PROJ" : "Zowe-DevOps-08",
         "JENKINS_USER" : "workshop_008",
         "JENKINS_PASS" : "008_workshop",
         "CHE_USER" : "workshop_008",
@@ -142,12 +142,12 @@
         "MARBLE_COLOR" : "BLACK",
         "GITHUB_USER" : "zowe-008",
         "GITHUB_PASS" : "Zowe-Workshop-08",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-08/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-08/invitations"
     }, 
     "9" :  {
         "MAINFRAME_USER" : "CUST009",
         "MAINFRAME_PASS" : "CUST009",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-09",
+        "GITHUB_PROJ" : "Zowe-DevOps-09",
         "JENKINS_USER" : "workshop_009",
         "JENKINS_PASS" : "009_workshop",
         "CHE_USER" : "workshop_009",
@@ -160,12 +160,12 @@
         "MARBLE_COLOR" : "GRAY",
         "GITHUB_USER" : "zowe-009",
         "GITHUB_PASS" : "Zowe-Workshop-09",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-09/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-09/invitations"
     }, 
     "10" :  {
         "MAINFRAME_USER" : "CUST010",
         "MAINFRAME_PASS" : "CUST010",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-10",
+        "GITHUB_PROJ" : "Zowe-DevOps-10",
         "JENKINS_USER" : "workshop_010",
         "JENKINS_PASS" : "010_workshop",
         "CHE_USER" : "workshop_010",
@@ -178,12 +178,12 @@
         "MARBLE_COLOR" : "BROWN",
         "GITHUB_USER" : "zowe-0010",
         "GITHUB_PASS" : "Zowe-Workshop-10",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-10/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-10/invitations"
     }, 
     "11" :  {
         "MAINFRAME_USER" : "CUST011",
         "MAINFRAME_PASS" : "CUST011",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-11",
+        "GITHUB_PROJ" : "Zowe-DevOps-11",
         "JENKINS_USER" : "workshop_011",
         "JENKINS_PASS" : "011_workshop",
         "CHE_USER" : "workshop_011",
@@ -196,12 +196,12 @@
         "MARBLE_COLOR" : "NAVY",
         "GITHUB_USER" : "zowe-011",
         "GITHUB_PASS" : "Zowe-Workshop-11",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-011/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-011/invitations"
     }, 
     "12" :  {
         "MAINFRAME_USER" : "CUST012",
         "MAINFRAME_PASS" : "CUST012",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-12",
+        "GITHUB_PROJ" : "Zowe-DevOps-12",
         "JENKINS_USER" : "workshop_012",
         "JENKINS_PASS" : "012_workshop",
         "CHE_USER" : "workshop_012",
@@ -214,12 +214,12 @@
         "MARBLE_COLOR" : "CYAN",
         "GITHUB_USER" : "zowe-012",
         "GITHUB_PASS" : "Zowe-Workshop-12",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-012/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-012/invitations"
     }, 
     "13" :  {
         "MAINFRAME_USER" : "CUST013",
         "MAINFRAME_PASS" : "CUST013",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-13",
+        "GITHUB_PROJ" : "Zowe-DevOps-13",
         "JENKINS_USER" : "workshop_013",
         "JENKINS_PASS" : "013_workshop",
         "CHE_USER" : "workshop_013",
@@ -232,12 +232,12 @@
         "MARBLE_COLOR" : "MAGENTA",
         "GITHUB_USER" : "zowe-013",
         "GITHUB_PASS" : "Zowe-Workshop-13",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-013/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-013/invitations"
     }, 
     "14" :  {
         "MAINFRAME_USER" : "CUST014",
         "MAINFRAME_PASS" : "CUST014",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-14",
+        "GITHUB_PROJ" : "Zowe-DevOps-14",
         "JENKINS_USER" : "workshop_014",
         "JENKINS_PASS" : "014_workshop",
         "CHE_USER" : "workshop_014",
@@ -250,12 +250,12 @@
         "MARBLE_COLOR" : "PINK",
         "GITHUB_USER" : "zowe-014",
         "GITHUB_PASS" : "Zowe-Workshop-14",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-014/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-014/invitations"
     }, 
     "15" :  {
         "MAINFRAME_USER" : "CUST015",
         "MAINFRAME_PASS" : "CUST015",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-15",
+        "GITHUB_PROJ" : "Zowe-DevOps-15",
         "JENKINS_USER" : "workshop_015",
         "JENKINS_PASS" : "015_workshop",
         "CHE_USER" : "workshop_015",
@@ -268,12 +268,12 @@
         "MARBLE_COLOR" : "LAVENDER",
         "GITHUB_USER" : "zowe-015",
         "GITHUB_PASS" : "Zowe-Workshop-15",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-015/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-015/invitations"
     }, 
     "16" :  {
         "MAINFRAME_USER" : "CUST016",
         "MAINFRAME_PASS" : "CUST016",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-16",
+        "GITHUB_PROJ" : "Zowe-DevOps-16",
         "JENKINS_USER" : "workshop_016",
         "JENKINS_PASS" : "016_workshop",
         "CHE_USER" : "workshop_016",
@@ -286,12 +286,12 @@
         "MARBLE_COLOR" : "TAN",
         "GITHUB_USER" : "zowe-016",
         "GITHUB_PASS" : "Zowe-Workshop-16",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-016/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-016/invitations"
     }, 
     "17" :  {
         "MAINFRAME_USER" : "CUST017",
         "MAINFRAME_PASS" : "CUST017",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-17",
+        "GITHUB_PROJ" : "Zowe-DevOps-17",
         "JENKINS_USER" : "workshop_017",
         "JENKINS_PASS" : "017_workshop",
         "CHE_USER" : "workshop_017",
@@ -304,12 +304,12 @@
         "MARBLE_COLOR" : "AQUA",
         "GITHUB_USER" : "zowe-017",
         "GITHUB_PASS" : "Zowe-Workshop-17",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-017/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-017/invitations"
     }, 
     "18" :  {
         "MAINFRAME_USER" : "CUST018",
         "MAINFRAME_PASS" : "CUST018",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-18",
+        "GITHUB_PROJ" : "Zowe-DevOps-18",
         "JENKINS_USER" : "workshop_018",
         "JENKINS_PASS" : "018_workshop",
         "CHE_USER" : "workshop_018",
@@ -322,12 +322,12 @@
         "MARBLE_COLOR" : "MAROON",
         "GITHUB_USER" : "zowe-018",
         "GITHUB_PASS" : "Zowe-Workshop-18",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-018/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-018/invitations"
     }, 
     "19" :  {
         "MAINFRAME_USER" : "CUST019",
         "MAINFRAME_PASS" : "CUST019",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-19",
+        "GITHUB_PROJ" : "Zowe-DevOps-19",
         "JENKINS_USER" : "workshop_019",
         "JENKINS_PASS" : "019_workshop",
         "CHE_USER" : "workshop_019",
@@ -340,12 +340,12 @@
         "MARBLE_COLOR" : "OLIVE",
         "GITHUB_USER" : "zowe-019",
         "GITHUB_PASS" : "Zowe-Workshop-19",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-019/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-019/invitations"
     }, 
     "20" :  {
         "MAINFRAME_USER" : "CUST020",
         "MAINFRAME_PASS" : "CUST020",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-20",
+        "GITHUB_PROJ" : "Zowe-DevOps-20",
         "JENKINS_USER" : "workshop_020",
         "JENKINS_PASS" : "020_workshop",
         "CHE_USER" : "workshop_020",
@@ -358,12 +358,12 @@
         "MARBLE_COLOR" : "TEAL",
         "GITHUB_USER" : "zowe-020",
         "GITHUB_PASS" : "Zowe-Workshop-20",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-020/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-020/invitations"
     }, 
     "21" :  {
         "MAINFRAME_USER" : "CUST021",
         "MAINFRAME_PASS" : "CUST021",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-21",
+        "GITHUB_PROJ" : "Zowe-DevOps-21",
         "JENKINS_USER" : "workshop_021",
         "JENKINS_PASS" : "021_workshop",
         "CHE_USER" : "workshop_021",
@@ -376,12 +376,12 @@
         "MARBLE_COLOR" : "CORAL",
         "GITHUB_USER" : "zowe-021",
         "GITHUB_PASS" : "Zowe-Workshop-21",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-021/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-021/invitations"
     }, 
     "22" :  {
         "MAINFRAME_USER" : "CUST022",
         "MAINFRAME_PASS" : "CUST022",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-22",
+        "GITHUB_PROJ" : "Zowe-DevOps-22",
         "JENKINS_USER" : "workshop_022",
         "JENKINS_PASS" : "022_workshop",
         "CHE_USER" : "workshop_022",
@@ -394,12 +394,12 @@
         "MARBLE_COLOR" : "ROSE",
         "GITHUB_USER" : "zowe-022",
         "GITHUB_PASS" : "Zowe-Workshop-22",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-022/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-022/invitations"
     }, 
     "23" :  {
         "MAINFRAME_USER" : "CUST023",
         "MAINFRAME_PASS" : "CUST023",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-23",
+        "GITHUB_PROJ" : "Zowe-DevOps-23",
         "JENKINS_USER" : "workshop_023",
         "JENKINS_PASS" : "023_workshop",
         "CHE_USER" : "workshop_023",
@@ -412,12 +412,12 @@
         "MARBLE_COLOR" : "SAND",
         "GITHUB_USER" : "zowe-023",
         "GITHUB_PASS" : "Zowe-Workshop-23",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-023/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-023/invitations"
     }, 
     "24" :  {
         "MAINFRAME_USER" : "CUST024",
         "MAINFRAME_PASS" : "CUST024",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-24",
+        "GITHUB_PROJ" : "Zowe-DevOps-24",
         "JENKINS_USER" : "workshop_024",
         "JENKINS_PASS" : "024_workshop",
         "CHE_USER" : "workshop_024",
@@ -430,12 +430,12 @@
         "MARBLE_COLOR" : "PURPLE",
         "GITHUB_USER" : "zowe-024",
         "GITHUB_PASS" : "Zowe-Workshop-24",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-024/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-024/invitations"
     }, 
     "25" :  {
         "MAINFRAME_USER" : "CUST025",
         "MAINFRAME_PASS" : "CUST025",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-25",
+        "GITHUB_PROJ" : "Zowe-DevOps-25",
         "JENKINS_USER" : "workshop_025",
         "JENKINS_PASS" : "025_workshop",
         "CHE_USER" : "workshop_025",
@@ -448,12 +448,12 @@
         "MARBLE_COLOR" : "GOLD",
         "GITHUB_USER" : "zowe-025",
         "GITHUB_PASS" : "Zowe-Workshop-25",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-025/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-025/invitations"
     }, 
     "26" :  {
         "MAINFRAME_USER" : "CUST026",
         "MAINFRAME_PASS" : "CUST026",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-26",
+        "GITHUB_PROJ" : "Zowe-DevOps-26",
         "JENKINS_USER" : "workshop_026",
         "JENKINS_PASS" : "026_workshop",
         "CHE_USER" : "workshop_026",
@@ -466,12 +466,12 @@
         "MARBLE_COLOR" : "SILVER",
         "GITHUB_USER" : "zowe-026",
         "GITHUB_PASS" : "Zowe-Workshop-26",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-026/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-026/invitations"
     }, 
     "27" :  {
         "MAINFRAME_USER" : "CUST027",
         "MAINFRAME_PASS" : "CUST027",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-27",
+        "GITHUB_PROJ" : "Zowe-DevOps-27",
         "JENKINS_USER" : "workshop_027",
         "JENKINS_PASS" : "027_workshop",
         "CHE_USER" : "workshop_027",
@@ -484,12 +484,12 @@
         "MARBLE_COLOR" : "BRONZE",
         "GITHUB_USER" : "zowe-027",
         "GITHUB_PASS" : "Zowe-Workshop-27",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-027/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-027/invitations"
     }, 
     "28" :  {
         "MAINFRAME_USER" : "CUST028",
         "MAINFRAME_PASS" : "CUST028",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-28",
+        "GITHUB_PROJ" : "Zowe-DevOps-28",
         "JENKINS_USER" : "workshop_028",
         "JENKINS_PASS" : "028_workshop",
         "CHE_USER" : "workshop_028",
@@ -502,12 +502,12 @@
         "MARBLE_COLOR" : "PEACH",
         "GITHUB_USER" : "zowe-028",
         "GITHUB_PASS" : "Zowe-Workshop-28",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-028/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-028/invitations"
     }, 
     "29" :  {
         "MAINFRAME_USER" : "CUST029",
         "MAINFRAME_PASS" : "CUST029",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-29",
+        "GITHUB_PROJ" : "Zowe-DevOps-29",
         "JENKINS_USER" : "workshop_029",
         "JENKINS_PASS" : "029_workshop",
         "CHE_USER" : "workshop_029",
@@ -520,12 +520,12 @@
         "MARBLE_COLOR" : "LIME",
         "GITHUB_USER" : "zowe-029",
         "GITHUB_PASS" : "Zowe-Workshop-29",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-029/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-029/invitations"
     }, 
     "30" :  {
         "MAINFRAME_USER" : "CUST030",
         "MAINFRAME_PASS" : "CUST030",
-        "GITHUB_PROJ" : "Zowe-DevOps-A-30",
+        "GITHUB_PROJ" : "Zowe-DevOps-30",
         "JENKINS_USER" : "workshop_030",
         "JENKINS_PASS" : "030_workshop",
         "CHE_USER" : "workshop_030",
@@ -538,6 +538,6 @@
         "MARBLE_COLOR" : "PEAR",
         "GITHUB_USER" : "zowe-030",
         "GITHUB_PASS" : "Zowe-Workshop-30",
-        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-A-030/invitations"
+        "GITHUB_LINK" : "https://github.com/workshopdemos/Zowe-DevOps-030/invitations"
     }
 }

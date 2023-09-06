@@ -1,5 +1,5 @@
 {
-        "GITHUB_ORG" : "McQuitty-Broadcom",
+        "GITHUB_ORG" : "workshopdemos",
         "JENKINS_URL" : "http://mfwsone.broadcom.com/jenkins/",	
         "CHE_URL" : "http://mfwsone.broadcom.com/dashboard/",	
         "CHE_TERMINAL" : "zowe/cli",	

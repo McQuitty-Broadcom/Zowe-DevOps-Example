@@ -1,7 +1,6 @@
-var assert = require('assert'),
-    cmd = require('node-cmd'),
-    config = require('../config.json'),
-    fs = require("fs");
+var assert = require('assert');
+var cmd = require('node-cmd');
+var config = require('../config.json');
 
 /**
  * Callback equivalent to that of node-cmd
@@ -12,11 +11,46 @@ var assert = require('assert'),
  */
 
 /**
+ * await Job Callback
+ * @callback awaitJobCallback
+ * @param {Error} err 
+ */
+
+/**
  * Retrieve Marble Quantity Callback
  * @callback awaitQuantityCallback
  * @param {Error}  err 
  * @param {number} quantity null if marble is not defined in inventory
+ * @param {number} cost     null if marble is not defined in inventory
  */
+
+/**
+* Polls jobId. Callback is made without error if Job completes with CC 0000 in the allotted time
+* @param {string}           jobId     jobId to check the completion of
+* @param {awaitJobCallback} callback  function to call after completion
+* @param {number}           tries     max attempts to check the completion of the job
+* @param {number}           wait      wait time in ms between each check
+*/
+function awaitJobCompletion(jobId, callback, tries = 30, wait = 1000) {
+  if (tries > 0) {
+      sleep(wait);
+      cmd.get(
+      `zowe jobs view job-status-by-jobid ${jobId} --rff retcode --rft string`,
+      function (err, data, stderr) {
+          retcode = data.trim();
+          if (retcode == "CC 0000") {
+            callback(null);
+          } else if (retcode == "null") {
+            awaitJobCompletion(jobId, callback, tries - 1, wait);
+          } else {
+            callback(new Error(jobId + " had a return code of " + retcode));
+          }
+      }
+      );
+  } else {
+      callback(new Error(jobId + " timed out."));
+  }
+}
 
 /**
 * Creates a Marble with an initial quantity
@@ -28,10 +62,6 @@ function createMarble(color, quantity=1, callback) {
   cmd.get(
     `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} CRE ${color} ${quantity}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
-      //log output
-      var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
-      writeToFile("command-archive/create-marble", content);
-
       typeof callback === 'function' && callback(err, data, stderr);
     }
   );
@@ -46,10 +76,6 @@ function deleteMarble(color, callback) {
   cmd.get(
     `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} DEL ${color}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
-      //log output
-      var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
-      writeToFile("command-archive/delete-marble", content);
-
       typeof callback === 'function' && callback(err, data, stderr);
     }
   );
@@ -62,30 +88,46 @@ function deleteMarble(color, callback) {
 *
 */
 function getMarbleQuantity(color, callback) {
-  var command = `zowe db2 execute sql -q "SELECT * FROM EVENT.MARBLE" --rfj`;
-
-  cmd.get(command, function(err, data, stderr) {
-    //log output
-    var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
-    writeToFile("command-archive/get-marble-quantity", content);
-
-    if(err){
-      callback(err);
-    } else if (stderr){
-      callback(new Error("\nCommand:\n" + command + "\n" + stderr + "Stack Trace:"));
-    } else {
-      data = JSON.parse(data);
-      var desiredEntry = data.data[0].find(function(obj) {
-        return obj.COLOR.trim() === color;
-      });
-
-      if(desiredEntry === undefined){ // not found
-        callback(err, null, null);
+  // Submit job, await completion
+  cmd.get(
+    `zowe jobs submit data-set "${config.db2QueryJCL}" --rff jobid --rft string`,
+    function (err, data, stderr) {
+      if(err){
+        throw err
       } else {
-        callback(err, desiredEntry.INVENTORY);
+        // Strip unwanted whitespace/newline
+        var jobId = data.trim();
+
+        // Await the jobs completion
+        awaitJobCompletion(jobId, function(err){
+          if(err){
+            throw err
+          } else {
+            cmd.get(
+              `zowe jobs view sfbi ${jobId} 104`,
+              function (err, data, stderr) {
+                if(err){
+                  callback(err);
+                } else {
+                  var pattern = new RegExp(".*\\| " + color + " .*\\|.*\\|.*\\|","g");
+                  var found = data.match(pattern);
+                  if(!found){
+                    callback(err, null, null);
+                  } else { //found
+                    //found should look like nn_| COLOR       |       QUANTITY |        COST |
+                    var row = found[0].split("|"),
+                        quantity = Number(row[2]);
+
+                    callback(err, quantity);
+                  }
+                }
+              }
+            );
+          }
+        });
       }
     }
-  });
+  );
 }
 
 /**
@@ -98,37 +140,18 @@ function updateMarble(color, quantity, callback) {
   cmd.get(
     `zowe console issue command "F ${config.cicsRegion},${config.cicsTran} UPD ${color} ${quantity}" --cn ${config.cicsConsole}`,
     function (err, data, stderr) {
-      //log output
-      var content = "Error:\n" + err + "\n" + "StdErr:\n" + stderr + "\n" + "Data:\n" + data;
-      writeToFile("command-archive/update-marble", content);
-
       typeof callback === 'function' && callback(err, data, stderr);
     }
   );
 }
 
 /**
-* Writes content to files
-* @param {string}           dir     directory to write content to
-* @param {string}           content content to write
-*/
-function writeToFile(dir, content) {
-  // Adjusted to account for Windows filename issues with : in the name.
-  var d = new Date(), 
-    fileName = d.toISOString().split(":").join("-") + ".txt",
-    filePath = dir + "/" + fileName;
-
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  };
-  
-  fs.writeFileSync(filePath, content, function(err) {
-    if(err) {
-      return console.log(err);
-    }
-  });
+ * Sleep function.
+ * @param {number} ms Number of ms to sleep
+ */
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
-
 
 describe('Marbles', function () {
   // Change timeout to 60s from the default of 2s
@@ -139,13 +162,13 @@ describe('Marbles', function () {
    * Delete the marble to reset inventory to zero (Delete will be tested later)
    * 
    * Create a marble
-   * Verify that there is one marble in the inventory with cost one
+   * Verify that there is one marble in the inventory
    * 
    * Create the marble entry "again"
    * Verify the appropriate error message is returned
    * 
-   * Update marble quantity to two
-   * Verify that there are two marbles in the inventory
+   * Update marble quantity to 2
+   * Verify that there are five marbles in the inventory
    * 
    * Delete the marble from the database
    * Verify there are no marbles in the inventory
@@ -161,15 +184,9 @@ describe('Marbles', function () {
 
     // Delete the marble to reset inventory to zero (Delete will be tested later)
     before(function(done){
-      deleteMarble(COLOR, function(err, data, stderr){
-        if(err){
-          throw err;
-        } else if (stderr){
-          throw new Error("\nError: " + stderr);
-        } else {
-          done();
-        }
-      });
+      deleteMarble(COLOR, function(){
+        done();
+      })
     });
 
     it.only('should create a single marble', function (done) {

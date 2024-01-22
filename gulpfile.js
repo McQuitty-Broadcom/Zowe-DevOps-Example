@@ -209,7 +209,15 @@ gulp.task('build-cobol', 'Build COBOL element', function (callback) {
   simpleCommand(command, "command-archive/build-cobol", callback);
 });
 
-gulp.task('cics-refresh', 'Refresh(new-copy) ' + config.cicsProgram + ' CICS Program', function (callback) {
+gulp.task('build-lnk', 'Build LNK element', function (callback) {
+      command = `zowe endevor generate element ${config.testElement} --type LNK --override-signout --maxrc 0 --stage-number 1`;
+
+  simpleCommand(command, "command-archive/build-link", callback);
+});
+
+gulp.task('build', 'Build Program', gulpSequence('build-cobol','build-lnk'));
+
+gulp.task('cics-refresh', `Refresh(new-copy) ${config.cicsProgram} CICS Program`, function (callback) {
   var command = `zowe cics refresh program "${config.cicsProgram}"`;
 
   simpleCommand(command, "command-archive/cics-refresh", callback);
@@ -219,6 +227,8 @@ gulp.task('copy', 'Copy LOADLIB & DBRMLIB to test environment', function (callba
   var ds = config.copyJCL;
   submitJobAndDownloadOutput(ds, "job-archive/copy", 4, callback);
 });
+
+gulp.task('deploy', 'Deploy Program', gulpSequence('copy','bind-n-grant','cics-refresh'));
 
 gulp.task('setupProfiles', 'Create project profiles and set them as default', function (callback) {
   var host, user, pass;
